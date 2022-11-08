@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bristol Covid 19 Infodesk</title>
+    
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/2febb0ff-a99f-43a1-828d-957683a9f08b/Logo.png?v=1642301238754">
+    
+    <img src="https://cdn.glitch.global/2febb0ff-a99f-43a1-828d-957683a9f08b/Logo.png?v=1642301238754" alt="Logo.png" width="180" height="62">
+    <link rel="stylesheet" href="/style.css">
+    
+     <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet"   
+     href="https://www.w3schools.com/w3css/4/w3.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <div class="grid-container">
+      <header>
+        
+        <form class="search" action="search.html">
+          <input name="searchterm" placeholder="Search.." type="text" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </header>
+      <nav>
+        <button onclick="location.href='home.html'" class="w3-button w3-block w3-blue">Home</button>
+        <button onclick="location.href='index.html'" class="w3-button w3-block w3-blue">Hospital Admission</button>
+        <button onclick="location.href='bed.html'" class="w3-button w3-block w3-blue">Bed Data Analyze</button>
+        <button onclick="getLocation(loadMap)" class="w3-button w3-block w3-blue">Hospital Map</button>
+        <button onclick="location.href='case.html'" class="w3-button w3-block w3-blue">Covid 19 Cases</button>
+        <button onclick="location.href='death.html'" class="w3-button w3-block w3-blue">Covid 19 Deaths</button>
+        <button onclick="location.href='cination.html'" class="w3-button w3-block w3-blue">Covid 19 Vaccination</button>
+        <button onclick="location.href='olunteer.html'" class="w3-button w3-block w3-blue">Volunteer Groups</button>
+      </nav>
+      <main>
+        <div class="w3-bar">
+          <button class="w3-bar-item w3-button w3-ripple w3-grey" onclick="show(this, 'tab','Hospital Admission Info')">Hospital Admission Info</button>
+        </div>
+        <div >
+          <iframe src="https://opendata.bristol.gov.uk/explore/embed/dataset/covid-19-hospital-admissions/table/?sort=date&static=false&datasetcard=false" width="1100" height="800" frameborder="0"></iframe>
+        </div>
+        
+        
+        
+      </main>
+    </div>
+    <footer>
+        <p> ©2022 Bristol Covid 19 Helpdesk <br>
+           This website is made by Maruf Kabir Refat</p>
+    </footer>
+  </body>
+</html>
